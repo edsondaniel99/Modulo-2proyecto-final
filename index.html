@@ -15,8 +15,10 @@
             <ul class="nav-links">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+            <!-- Enlace a Nosotros -->
+            <li><a href="#" onclick="redirigir('Nosotros.html')">Nosotros</a></li>
+            <!-- Enlace a Contacto -->
+            <li><a href="#" onclick="redirigir('Nosotros.html')">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -87,6 +89,7 @@
     </div>
 </section>
 
+
 <section class="members">
     <h2>Únete a Nuestra Comunidad Mágica</h2>
     <p>Conviértete en miembro de nuestra cafetería y disfruta de beneficios exclusivos. ¡La magia comienza aquí!</p>
@@ -95,9 +98,27 @@
         <li>Acceso prioritario a eventos exclusivos.</li>
         <li>Regalos mágicos en tu cumpleaños.</li>
     </ul>
+    <!--aqui se agrega el cuestionario, el intento-->
+    <form class="membership-form">
+        <div class="form-group">
+            <label for="firstName">Nombre:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Apellido:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Ingresa tu apellido" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Número:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+    </form>
     <button class="join-btn">Unirse Ahora</button>
 </section>
-
 
 
 <section class="existing-members">
@@ -151,5 +172,7 @@
         </section>        
         
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
