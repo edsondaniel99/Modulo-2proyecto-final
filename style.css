@@ -748,6 +748,44 @@ footer {
     }
 }
 
-
-
 /*Se cierra para paisajes importantes/*
+
+
+/* Sección de la lista de reproducción */
+.spotify-playlist {
+    background: linear-gradient(145deg, #3a2e27, #2b2621); /* Fondo con degradado */
+    color: #f1e9da; /* Color del texto */
+    padding: 40px 20px; /* Espaciado interno */
+    border: 2px solid #c69b6d; /* Borde dorado */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+    text-align: center; /* Texto centrado */
+    max-width: 800px; /* Ancho máximo */
+    margin: 40px auto; /* Centrado horizontal */
+}
+
+/* Título */
+.spotify-playlist h2 {
+    font-size: 2.5em; /* Tamaño del título */
+    color: #c69b6d; /* Color dorado */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para el texto */
+}
+
+/* Descripción */
+.spotify-playlist p {
+    font-size: 1.2em; /* Tamaño del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Contenedor del iframe */
+.playlist-container iframe {
+    border-radius: 12px; /* Bordes redondeados para el widget */
+    border: 0; /* Sin bordes */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 380px; /* Altura del widget */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para el widget */
+}
+
+/* Sección de la lista de reproducción */

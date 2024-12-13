@@ -1,0 +1,185 @@
+/* Estilo global */
+html {
+    font-size: 16px; /* Base estándar */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #1d1b1b;
+    color: #d1c7b7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #3a2e27;
+    padding: 1rem 0; /* Espaciado relativo */
+    border-bottom: 2px solid #c69b6d;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%; /* Uso de porcentaje para adaptabilidad */
+}
+
+.navbar .logo h1 {
+    color: #c69b6d;
+    font-size: 2rem; /* Escalable */
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Se adapta si es necesario */
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #d1c7b7;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    color: #c69b6d;
+}
+
+/* Estilo responsivo para encabezado */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Sección Hero */
+.hero {
+    background: url('https://images.unsplash.com/photo-1622281537719-bbf7307094c5?w=500&auto=format&fit=crop&q=60') no-repeat center center/cover;
+    filter: brightness(1.1) contrast(1.2) saturate(1.3);
+    color: #f1e9da;
+    text-align: center;
+    padding: 10vh 5%; /* Usa unidades de viewport */
+}
+
+.hero h2 {
+    font-size: 2.5rem; /* Escalable */
+    text-shadow: 3px 3px 4px #000;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.hero button {
+    background-color: #c69b6d;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #1d1b1b;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #7a5e3e;
+}
+
+/* Responsividad para Hero */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero button {
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* Cuadrículas y Listas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adaptativo */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-container > div {
+    background-color: #3a2e27;
+    border: 2px solid #c69b6d;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/* Responsividad para cuadrículas */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
+
+/* Formulario */
+.membership-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptativo */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.membership-form input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #c69b6d;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #3a2e27;
+    color: #d1c7b7;
+    border-top: 2px solid #c69b6d;
+}
+
+/* General responsivo */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px; /* Reduce el tamaño base */
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .membership-form input {
+        font-size: 0.9rem;
+    }
+}
